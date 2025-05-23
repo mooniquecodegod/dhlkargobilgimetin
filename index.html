@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang=\"tr\">
+<html lang="tr">
 <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DHL Kargo Hakkında</title>
-    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css\">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffcc00;
+            background-color: #0f0f0f;
+            color: #f5f5f5;
             animation: fadeIn 1.5s ease-in;
         }
         @keyframes fadeIn {
@@ -18,49 +19,73 @@
             to { opacity: 1; }
         }
         header {
-            background-color: #d40511;
+            background-color: #ff003c;
             color: #fff;
             padding: 20px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(255, 0, 60, 0.4);
         }
         nav {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             margin-top: 10px;
         }
         nav a {
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            transition: transform 0.3s;
+            position: relative;
         }
-        nav a:hover {
-            transform: scale(1.1);
+        nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background-color: #ff003c;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        nav a:hover::after {
+            transform: scaleX(1);
         }
         main {
-            padding: 20px;
-            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #ff003c;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(255, 0, 60, 0.3);
+            max-width: 900px;
+            width: 100%;
             animation: fadeIn 2s ease-in;
         }
+        h2, h3 {
+            color: #ff003c;
+        }
         .redirect-btn {
-            background-color: #fff;
-            color: #d40511;
-            padding: 10px 20px;
+            background-color: #ff003c;
+            color: #fff;
+            padding: 12px 24px;
             text-decoration: none;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 6px;
             display: inline-block;
             margin: 20px auto;
-            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
         }
         .redirect-btn:hover {
-            background-color: #f7f7f7;
+            background-color: #e60035;
             transform: scale(1.05);
+        }
+        .button-wrapper {
+            text-align: center;
+            margin-top: 20px;
         }
         @media (max-width: 768px) {
             .desktop-content { display: none; }
@@ -73,31 +98,33 @@
 <body>
 
 <header>
-    <h1><i class=\"fa-solid fa-truck-fast\"></i> DHL Kargo Bilgilendirme</h1>
+    <h1><i class="fa-solid fa-truck-fast"></i> DHL Kargo Bilgilendirme</h1>
     <nav>
-        <a href=\"#\">Anasayfa</a>
-        <a href=\"dhl-nedir.html\">DHL Kargo Nedir?</a>
-        <a href=\"mng-nedir.html\">MNG Kargo Nedir?</a>
+        <a href="#">Anasayfa</a>
+        <a href="dhl-nedir.html">DHL Kargo Nedir?</a>
+        <a href="mng-nedir.html">MNG Kargo Nedir?</a>
     </nav>
 </header>
 
 <main>
-    <div style=\"text-align: center;\">
-        <a href=\"https://yonlendirmebenikanka.blogspot.com/2025/05/124124124.html\" class=\"redirect-btn\" target=\"_blank\">
-            Resmi DHL Kargo Sitesine Git <i class=\"fa-solid fa-arrow-right\"></i>
-        </a>
-    </div>
+    <div class="card">
+        <div class="button-wrapper">
+            <a href="https://yonlendirmebenikanka.blogspot.com/2025/05/124124124.html" class="redirect-btn" target="_blank">
+                Resmi DHL Kargo Sitesine Git <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
 
-    <div class=\"desktop-content\">
-        <h2>DHL Kargo'nun Ayrıntılı Tarihçesi</h2>
-        <h3>Kuruluş ve İlk Yıllar (1969–1979)</h3>
-        <p>DHL, 1969 yılında San Francisco'da Adrian Dalsey, Larry Hillblom ve Robert Lynn tarafından kuruldu. Şirketin adı, kurucularının soyadlarının baş harflerinden oluşmaktadır. İlk olarak, San Francisco ile Honolulu arasında gümrük belgelerini hava yoluyla taşıyarak, deniz yoluyla taşınan yüklerin gümrük işlemlerini hızlandırmayı hedeflediler. Bu yenilikçi yaklaşım, uluslararası ekspres teslimat sektörünün temelini attı.</p>
-        <!-- Diğer metinler devam eder -->
-    </div>
+        <div class="desktop-content">
+            <h2>DHL Kargo'nun Ayrıntılı Tarihçesi</h2>
+            <h3>Kuruluş ve İlk Yıllar (1969–1979)</h3>
+            <p>DHL, 1969 yılında San Francisco'da Adrian Dalsey, Larry Hillblom ve Robert Lynn tarafından kuruldu. Şirketin adı, kurucularının soyadlarının baş harflerinden oluşmaktadır. İlk olarak, San Francisco ile Honolulu arasında gümrük belgelerini hava yoluyla taşıyarak, deniz yoluyla taşınan yüklerin gümrük işlemlerini hızlandırmayı hedeflediler. Bu yenilikçi yaklaşım, uluslararası ekspres teslimat sektörünün temelini attı.</p>
+            <!-- Devam eden uzun tarihçe metni -->
+        </div>
 
-    <div class=\"mobile-content\">
-        <h2>DHL Kargo Tarihçesi (Özet)</h2>
-        <p>DHL, 1969 yılında ABD'de kurulan uluslararası bir lojistik firmasıdır. Dünyanın önde gelen hızlı teslimat ve lojistik sağlayıcılarından biridir.</p>
+        <div class="mobile-content">
+            <h2>DHL Kargo Tarihçesi (Özet)</h2>
+            <p>DHL, 1969 yılında ABD'de kurulan uluslararası bir lojistik firmasıdır. Dünyanın önde gelen hızlı teslimat ve lojistik sağlayıcılarından biridir.</p>
+        </div>
     </div>
 </main>
 
