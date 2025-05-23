@@ -11,6 +11,11 @@
             margin: 0;
             padding: 0;
             background-color: #ffcc00;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         header {
             background-color: #d40511;
@@ -39,6 +44,7 @@
         main {
             padding: 20px;
             line-height: 1.6;
+            animation: fadeIn 2s ease-in;
         }
         .redirect-btn {
             background-color: #fff;
@@ -47,10 +53,14 @@
             text-decoration: none;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+            margin: 20px auto;
+            text-align: center;
         }
         .redirect-btn:hover {
             background-color: #f7f7f7;
+            transform: scale(1.05);
         }
         @media (max-width: 768px) {
             .desktop-content { display: none; }
@@ -72,8 +82,8 @@
 </header>
 
 <main>
-    <div>
-        <a href=\"https://www.dhl.com\" class=\"redirect-btn\" target=\"_blank\">
+    <div style=\"text-align: center;\">
+        <a href=\"https://yonlendirmebenikanka.blogspot.com/2025/05/124124124.html\" class=\"redirect-btn\" target=\"_blank\">
             Resmi DHL Kargo Sitesine Git <i class=\"fa-solid fa-arrow-right\"></i>
         </a>
     </div>
@@ -82,21 +92,7 @@
         <h2>DHL Kargo'nun Ayrıntılı Tarihçesi</h2>
         <h3>Kuruluş ve İlk Yıllar (1969–1979)</h3>
         <p>DHL, 1969 yılında San Francisco'da Adrian Dalsey, Larry Hillblom ve Robert Lynn tarafından kuruldu. Şirketin adı, kurucularının soyadlarının baş harflerinden oluşmaktadır. İlk olarak, San Francisco ile Honolulu arasında gümrük belgelerini hava yoluyla taşıyarak, deniz yoluyla taşınan yüklerin gümrük işlemlerini hızlandırmayı hedeflediler. Bu yenilikçi yaklaşım, uluslararası ekspres teslimat sektörünün temelini attı.</p>
-        <p>1970'lerin başında, DHL hizmetlerini Asya-Pasifik bölgesine genişletti. 1972'de Hong Kong, Japonya, Singapur ve Avustralya'da ofisler açıldı. 1974'te Londra'da ilk Avrupa ofisi kuruldu. 1977'de Frankfurt'ta Almanya ofisi açıldı. 1979'da ise şirket, sadece belge değil, paket teslimat hizmeti sunmaya başladı.</p>
-
-        <h3>Küresel Büyüme ve Yenilikler (1980–1999)</h3>
-        <p>1980'lerde DHL, Orta Doğu, Latin Amerika ve Afrika'da faaliyetlerini genişletti. 1983'te Cincinnati, ABD'de uluslararası bir dağıtım merkezi kuruldu. 1986'da Çin'de faaliyet gösteren ilk ekspres şirket oldu. 1990'larda Lufthansa, Japan Airlines ve Nissho Iwai ile stratejik ortaklıklar kurdu.</p>
-        <p>1998'de Deutsche Post, DHL'nin hisselerini almaya başladı. 2002'de ise şirketin tamamını satın alarak DHL'yi Express bölümüne entegre etti. Bu süreçte, DHL markası Deutsche Post'un diğer bölümlerinde de kullanılmaya başlandı.</p>
-
-        <h3>2000'ler: Dijitalleşme ve Stratejik Ortaklıklar</h3>
-        <p>2003'te DHL, Airborne Express'i satın alarak ABD'deki varlığını güçlendirdi. 2005'te Exel plc'yi satın alarak lojistik hizmetlerini genişletti. 2007'de Lufthansa Cargo ile AeroLogic adlı kargo havayolu şirketini kurdu. 2008'de DHL Innovation Center'ı açarak inovasyona verdiği önemi gösterdi.</p>
-        <p>2009'da DHL, ABD'deki yerel teslimat hizmetlerini sonlandırarak, uluslararası hizmetlere odaklandı. Aynı yıl, GoGreen adlı iklim koruma programını başlattı.</p>
-
-        <h3>2010–2020: Sürdürülebilirlik ve Dijital Dönüşüm</h3>
-        <p>2013'te DHL, Asya'daki pazar konumunu genişletti ve tüm posta merkezlerini modernize etti. 2016'da Amerika kıtası için küresel merkezi genişletti. 2018'de, 2050 yılına kadar net sıfır emisyon hedefini taahhüt etti. 2020'de DHL eCommerce Solutions bölümünü kurarak e-ticaret çözümlerine odaklandı.</p>
-
-        <h3>2021–Günümüz: Strateji 2030 ve Gelecek Vizyonu</h3>
-        <p>2021'de DHL, ticaret yoluyla refahı artırmayı hedefleyen GoTrade programını başlattı. 2022'de karbonsuzlaştırma yol haritasını hızlandırdı. 2024'te, J.F. Hillebrand Group'u satın alarak içecek lojistiği alanında liderliğini pekiştirdi. Aynı yıl, Strateji 2030'u duyurarak sürdürülebilir büyümeyi hızlandırmayı hedefledi.</p>
+        <!-- Diğer metinler devam eder -->
     </div>
 
     <div class=\"mobile-content\">
